@@ -50,13 +50,7 @@ class Random_Quote_WP {
 
 		$quote = $quote_object->get_quote();
 
-		$template = sprintf( '<br/>
-			<p>
-				<b>Quote of the day</b>
-				<blockquote> %s - %s</blockquote>
-			</p>',
-			$quote['quote'],
-			$quote['by'] );
+		$template = sprintf( '<br/><p><b>Quote of the day</b><blockquote> %s - %s</blockquote></p>', $quote['quote'], $quote['by'] );
 
 		return $template;
 	}
